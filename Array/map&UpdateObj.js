@@ -7,10 +7,7 @@ const initialState = [
 console.log("Before Update ", initialState);
 
 const newState = initialState.map((obj, index) => {
-  if (obj.id === 2) {
-    return { ...obj, id: 4, country: "India" };
-  }
-  return obj;
+  return { ...obj, id: 4, country: "India" };
 });
 
 console.log("After Update", newState);
